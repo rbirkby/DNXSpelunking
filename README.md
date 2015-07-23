@@ -15,6 +15,7 @@ Reads, writes, deletes aliases. Aliases live in %USERPROFILE%\.dnx\alias. They a
 Shows all aliases. Usually, there is just a single alias - default. These are the filenames (or directory names!) in the .dnx\alias folder.
 
 ```dnvm alias a b```
+```dnvm alias -name:a -version:b```
 
 Creates alias\a.txt with contents 'b'
 
@@ -27,6 +28,7 @@ Creates alias\a.txt with contents of the current CLR with .123 appended
 Shows the value of the alias a
 
 ```dnvm alias a -delete```
+```dnvm alias a -d```
 
 Deletes the alias a
 
@@ -37,4 +39,22 @@ Exception about Win32 devices
 ````dnvm alias ab\c test```
 
 Will create the alias only if the directory alias\ab exists.
+
+```dnvm help alias```
+
+Online help
+
+```dnvm alias ab 123 x64 coreclr```
+
+Writes dnx-coreclr-win-x64.123 to ab.txt
+
+```dnvm alias ab xyz x64 coreclr```
+
+Writes xyz to ab.txt. Ignores the architecture and runtime parameters.
+
+```dnvm alias -name:ab -version:123 -architecture:x86 -runtime:coreclr```
+```dnvm alias -name:ab -version:xyz -architecture:x64 -runtime:clr```
+
+Explicitly declare parameters.
+
 
