@@ -12,7 +12,7 @@ Reads, writes, deletes aliases. Aliases live in %USERPROFILE%\.dnx\alias. They a
 
 ```dnvm alias```
 
-Shows all aliases. Usually, there is just a single alias - default.
+Shows all aliases. Usually, there is just a single alias - default. These are the filenames (or directory names!) in the .dnx\alias folder.
 
 ```dnvm alias a b```
 
@@ -29,3 +29,12 @@ Shows the value of the alias a
 ```dnvm alias a -delete```
 
 Deletes the alias a
+
+```dnvm alias com1 abc```
+
+Exception about Win32 devices
+
+````dnvm alias ab\c test```
+
+Will create the alias only if the directory alias\ab exists.
+
