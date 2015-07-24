@@ -64,4 +64,6 @@ dnvm alias -name:ab -version:xyz -architecture:x64 -runtime:clr
 
 Explicitly declare parameters.
 
+```powershell -c "$global:DebugPreference='Continue'; &dnvm alias"```
 
+Turn debugging on while executing ```dnvm alias```
