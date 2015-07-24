@@ -32,6 +32,7 @@ Shows the value of the alias a
 ```
 dnvm alias a -delete
 dnvm alias a -d
+dnvm unalias a
 ```
 
 Deletes the alias a
