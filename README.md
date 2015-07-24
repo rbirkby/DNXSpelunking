@@ -49,17 +49,23 @@ Will create the alias only if the directory alias\ab exists.
 
 Online help
 
-```dnvm alias ab 123 x64 coreclr```
+```
+dnvm alias ab 123 x64 coreclr
+dnvm alias ab 123 -x64 -coreclr
+```
 
 Writes dnx-coreclr-win-x64.123 to ab.txt
 
-```dnvm alias ab xyz x64 coreclr```
+```
+dnvm alias ab xyz x64 coreclr
+```
 
 Writes xyz to ab.txt. Ignores the architecture and runtime parameters.
 
 ```
 dnvm alias -name:ab -version:123 -architecture:x86 -runtime:coreclr
 dnvm alias -name:ab -version:xyz -architecture:x64 -runtime:clr
+dnvm alias ab 123 -arch:x64 -clr
 ```
 
 Explicitly declare parameters.
