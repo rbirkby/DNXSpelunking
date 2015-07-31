@@ -1,5 +1,7 @@
 # DNXSpelunking
 
+Done with beta5
+
 ##DNVM
 
 The Dot Net Version Manager.
